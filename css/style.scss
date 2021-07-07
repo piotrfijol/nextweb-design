@@ -60,7 +60,9 @@ ul {
     display: none;
 }
 
-.showcase__header {
+.showcase {
+    
+    &__header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,17 +71,26 @@ ul {
     margin: 0 auto;
     margin-top: 88px;
     text-align: center;
-
-    svg {
-        width: 55%;
+    
+    &__logo {
+        
+        svg {
+            width: 40vw;
+        }
     }
 
-    p {
-        font-family: sans-serif;
-        margin-top: 20px;
-        letter-spacing: .05em;
-        color: #666;
+    &__desc {
+        
+        p {
+            font-family: sans-serif;
+            margin-top: 20px;
+            letter-spacing: .05em;
+            color: #666;
+        }
     }
+
+    }
+
 }
 
 @media screen and (min-width: 1025px) {

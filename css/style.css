@@ -67,10 +67,10 @@ ul {
   margin-top: 88px;
   text-align: center;
 }
-.showcase__header svg {
-  width: 55%;
+.showcase__header__logo svg {
+  width: 40vw;
 }
-.showcase__header p {
+.showcase__header__desc p {
   font-family: sans-serif;
   margin-top: 20px;
   letter-spacing: 0.05em;
