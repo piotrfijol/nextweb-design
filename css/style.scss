@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body {
+    overflow: scroll;
+}
+
 /* Navbar */
 
 .nav {
@@ -11,6 +15,7 @@
     background-color: #FFF;
     box-shadow: 0px 2px 25px 1px #DDD;
     position: fixed; 
+    top: 0;
 }
 
 
@@ -55,8 +60,29 @@ ul {
     display: none;
 }
 
+.showcase__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    min-height: 100px;
+    margin: 0 auto;
+    margin-top: 88px;
+    text-align: center;
 
-@media screen and (min-width: 1125px) {
+    svg {
+        width: 55%;
+    }
+
+    p {
+        font-family: sans-serif;
+        margin-top: 20px;
+        letter-spacing: .05em;
+        color: #666;
+    }
+}
+
+@media screen and (min-width: 1025px) {
     .nav {
         height: 47px;
         background-color: #F5F5F5;
@@ -80,7 +106,7 @@ ul {
     }
 
     nav ul {
-        transform: translateX(-30px);
+        transform: translateX(-35px);
         display: flex;
         width: 500px;
         margin: auto;
@@ -89,7 +115,7 @@ ul {
             display: flex;
             text-decoration: none;
             font-family: sans-serif;
-            font-size: 12px;
+            font-size: 13px;
             color: #666;
             padding: 1.35em 1.2em;
             letter-spacing: .05em;
@@ -119,6 +145,43 @@ ul {
         svg path {
             fill: #CBCBCB;
         }
+    }
+
+
+    .showcase {
+
+        &__header {
+            flex-direction: row;
+            align-items: space-around;
+            font-size: 28px;
+            width: 80vw;
+            padding: 0 2em;
+            margin: 0 auto;
+            margin-top: 160px;
+            max-width: 1216px;
+    
+    
+            p {
+                margin-top: 0;
+            }
+
+            &__logo {
+                flex: 1;
+                min-width: 620px;
+                text-align: left;
+
+                svg {
+                    width: 25%;
+                    margin-left: 1.5em;
+                }
+            }
+
+            &__desc {
+                margin-right: 1em;
+            }
+        }
+
+
     }
 
 }
