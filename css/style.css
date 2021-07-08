@@ -5,6 +5,7 @@
 
 body {
   overflow: scroll;
+  overflow-x: hidden;
 }
 
 /* Navbar */
@@ -75,6 +76,30 @@ ul {
   margin-top: 20px;
   letter-spacing: 0.05em;
   color: #666;
+}
+.showcase__grid {
+  margin-left: 8px;
+  margin-top: 25px;
+}
+.showcase__grid .news {
+  width: 82vmin;
+  height: 82vmin;
+  margin: 4px;
+  background-color: goldenrod;
+}
+.showcase__grid .news:first-child {
+  margin-left: 0;
+}
+.showcase__grid .ad {
+  display: block;
+  width: 93vmin;
+  height: 43vmin;
+  background-color: mediumvioletred;
+  margin-top: 4px;
+}
+.showcase__grid__slider {
+  display: flex;
+  width: 550vw;
 }
 
 @media screen and (min-width: 1025px) {

@@ -5,6 +5,7 @@
 
 body {
     overflow: scroll;
+    overflow-x: hidden;
 }
 
 /* Navbar */
@@ -63,32 +64,62 @@ ul {
 .showcase {
     
     &__header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80vw;
-    min-height: 100px;
-    margin: 0 auto;
-    margin-top: 88px;
-    text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80vw;
+        min-height: 100px;
+        margin: 0 auto;
+        margin-top: 88px;
+        text-align: center;
+        
+        &__logo {
+            
+            svg {
+                width: 40vw;
+            }
+        }
+
+        &__desc {
+            
+            p {
+                font-family: sans-serif;
+                margin-top: 20px;
+                letter-spacing: .05em;
+                color: #666;
+            }
+        }
+    }
+
     
-    &__logo {
-        
-        svg {
-            width: 40vw;
-        }
-    }
 
-    &__desc {
-        
-        p {
-            font-family: sans-serif;
-            margin-top: 20px;
-            letter-spacing: .05em;
-            color: #666;
-        }
-    }
+    &__grid {
+        margin-left: 8px;
+        margin-top: 25px;
 
+        .news {
+            width: 82vmin;
+            height: 82vmin;
+            margin: 4px;
+            background-color: goldenrod;
+        }
+
+        .news:first-child {
+            margin-left: 0;
+        }
+
+        .ad {
+            display: block;
+            width: 93vmin;
+            height: 43vmin;
+            background-color: mediumvioletred;
+            margin-top: 4px;
+        }
+
+        &__slider {
+            display: flex;
+            width: 550vw; 
+        }
     }
 
 }
